@@ -1,4 +1,58 @@
-@import "settings";
 * {
     box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+.body {
+    background-color: #F5F5F1;
+}
+.noBottomMargin {
+    margin-bottom: 0px;
+}
+.noTopMargin {
+    margin-top: 0px;
+}
+.topMargin {
+    margin-top: 20px;
+}
+//Etsy Logo Row START//
+.topRowBackground {
+    background-color: white;
+}
+.fa-shopping-cart {
+    color: #666666;
+}
+.etsyLogo {
+    width: 140px;
+}
+.topRowButtons {
+    margin-top: 20px;
+}
+.buttonPrimary1 {
+    background-color: #34A8C4;
+    color: white;
+}
+//Etsy Logo Row END//
+//Etsy Main Section START//
+.leftColumn {
+    // background-color: rgb(103, 221, 221);
+}
+//Etsy Main Section END//
+
+//Function Styling START//
+.colStyle {
+    background-color: red;
+}
+//Function Styling END//
+
+//JS Styling//
+.helperClass {
+    p {
+        display: inline;
+    }
+}
+
+.rightSide {
+    float: right;
 }

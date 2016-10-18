@@ -7,30 +7,136 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Stylesheets go here. -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/e661b7c81d.js"></script>
   <link rel="stylesheet" type="text/css" href="css/global.css" />
 </head>
-<body>
-<!--Header Begin-->
-<header>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      Test
+<body class="body">
+  <!--Header Begin-->
+  <header>
+    <div class="container-fluid topRowBackground">
+      <div class="row">
+        <div class="col-sm-9">
+          <img src="img/etsy.jpg" alt="Etsy Logo" class="etsyLogo col-sm-1">
+          <span class="input-group col-sm-4 topRowButtons">
+            <input class="form-control" type="text" name="search" placeholder="Search for items or shops" value="">
+            <span class="input-group-btn">
+              <button class="btn buttonPrimary1" type="button">Search</button>
+            </span>
+          </span>
+        </div>
+        <div class="col-sm-3 topRowButtons">
+          <ul class="text-primary list-inline list-unstyled">
+            <li>Sell on Etsy</li>
+            <li>Register</li>
+            <li><button class="btn btn-default" type="submit">Sign In</button></li>
+            <li><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <hr class="noTopMargin"/>
+          <ul class="text-muted list-unstyled list-inline">
+            <li>Clothing &amp; Accesories</li>
+            <li>Jewelery</li>
+            <li>Craft Supplies &amp; Tools</li>
+            <li>Weddings</li>
+            <li>Entertainment</li>
+            <li>Home &amp; Living</li>
+            <li>Kids &amp; Baby</li>
+            <li>Vintage</li>
+          </ul>
+          <hr class="noBottomMargin"/>
+        </div>
+      </div>
     </div>
-  <div class="row">
-    <div class="col-sm-12">
-      Test
-    </div>
-  </div>
-  </div>
-</div>
-</header>
-<!--Header End-->
-<main>
+  </header>
+  <!--Header End-->
+  <main>
+    <div class="container-fluid topMargin">
+      <div class="row">
+        <div class="col-sm-2 leftColumn">
+          <strong>
+            Show results for:
+          </strong><br>
+          <div class="">
+            <h6>All categories</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Toys &amp; Games</a></li>
+              <li><a href="#">Art &amp; Collections</a></li>
+              <li><a href="#">Craft Supplies &amp; Tools</a></li>
+              <li><a href="#">Home &amp; Living</a></li>
+              <li><a href="#">Books, Movies &amp; Music</a></li>
+              <li><a href="#">Paper &amp; Party Supplies</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Clothing</a></li>
+              <li><a href="#">Electronics &amp; Accessories</a></li>
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Weddings</a></li>
+              <li><a href="#">Bags &amp; Purses</a></li>
+            </ul>
+          </div>
+          <strong>
+            Refine your search
+          </strong><br>
+          <div class="">
+            <h6>Shop location</h6>
+            <div class="radio">
+              <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> <strong>Anywhere</strong>
+              </label>
+            </div><div class="radio">
+              <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> United States
+              </label>
+            </div>
+            <span><a href="#">Choose a custom location</a></span><br>
+            <hr>
+            <strong>Item type</strong>
+            <div class="radio">
+              <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> All items
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> Handmade
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="..."> <strong>Vintage</strong>
+              </label>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <div class="col-sm-10 rightColumn">
+          <div class="row" id="searchResultsHomework">
 
-</main>
-  <!-- Scripts go here. -->
-  <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
-  <script type="text/javascript" src="js/global.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Scripts go here. -->
+<script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=fetch"></script>
+<script type="text/javascript" src="js/global.js"></script>
 </body>
 </html>
