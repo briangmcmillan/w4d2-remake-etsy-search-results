@@ -147,3 +147,7 @@ img {
   float: right;
   color: #78C047;
 }
+
+.footerButtonRow {
+  margin-top: 20px;
+}
