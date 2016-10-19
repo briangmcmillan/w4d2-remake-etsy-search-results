@@ -4,6 +4,7 @@ function createResultCard(item) {
   card.classList.add('col-sm-3', 'helperClass')
 
   var card2 = document.createElement('div')
+  card2.classList.add('secondDiv')
   card.appendChild(card2)
 
   var image = document.createElement('img')
@@ -11,14 +12,16 @@ function createResultCard(item) {
   card2.appendChild(image)
 
   var card3 = document.createElement('div')
+  card3.classList.add('textDiv')
   card2.appendChild(card3)
 
-  var title = document.createElement('h5')
+  var title = document.createElement('h6')
+  title.classList.add('titleText')
   title.innerHTML = item.title
   card3.appendChild(title)
 
   var seller = document.createElement('p')
-  seller.classList.add('leftSide')
+  seller.classList.add('leftSide', 'text-muted')
   seller.innerHTML = item.seller
   card3.appendChild(seller)
 

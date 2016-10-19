@@ -71,6 +71,11 @@ img {
   color: blue;
 }
 
+.priceSizing {
+  height: 40px;
+  width: 75px;
+}
+
 .btn-red {
   background-color: red;
   height: 25px;
@@ -121,6 +126,24 @@ img {
   display: inline;
 }
 
+.secondDiv {
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #E1E3DF;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.textDiv {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.titleText {
+  margin-bottom: -2px;
+}
+
 .rightSide {
   float: right;
+  color: #78C047;
 }
