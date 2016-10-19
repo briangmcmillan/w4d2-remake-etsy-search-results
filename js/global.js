@@ -1,3 +1,7 @@
+fetch('http://thinksaydo.com/tiyproxy.php?url=' + encodeURIComponent('https://openapi.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&keywords=' + encodeURIComponent('board games') + '&includes=Images,Shop'))
+.then(response => response.json())
+.then(response => console.log(response))
+
 // Declare your builder function
 function createResultCard(item) {
   var card = document.createElement('div')
@@ -41,69 +45,72 @@ function createResultCard(item) {
 // Don't forget you can use a for() loop, or make an array of objects even and use a items.forEach() loop.
 var items = [
   {
-    image: 'http://unsplash.it/400?image=54',
+    image: 'http://unsplash.it/400?image=',
     title: 'Moutain Top Sky View Art',
     seller: 'brianglenn',
     price:'$' + 18.87
   },
   {
-    image: 'http://unsplash.it/400?image=23',
+    image: 'http://unsplash.it/400?image=',
     title: 'Set of 3 Dinner Forks',
     seller: 'emmagq',
     price:'$' + 4.56
   },{
-    image: 'http://unsplash.it/400?image=37',
+    image: 'http://unsplash.it/400?image=',
     title: 'Cliffside Ocean View Painting',
     seller: 'melindmarie',
     price:'$' + 8.99
   },{
-    image: 'http://unsplash.it/400?image=41',
+    image: 'http://unsplash.it/400?image=',
     title: 'Water Beads Painting',
     seller: 'robertallen',
     price:'$' + 21.99
   },{
-    image: 'http://unsplash.it/400?image=58',
+    image: 'http://unsplash.it/400?image=',
     title: 'Lighthouse Photo',
     seller: 'saraheliz',
     price:'$' + 12.89
   },{
-    image: 'http://unsplash.it/400?image=64',
+    image: 'http://unsplash.it/400?image=',
     title: 'Burgundy Shades',
     seller: 'jamesty',
     price:'$' + 12.99
   },{
-    image: 'http://unsplash.it/400?image=71',
+    image: 'http://unsplash.it/400?image=',
     title: 'Ancient Wooden Swing Set',
     seller: 'lailamarie',
     price:'$' + 87.89
   },{
-    image: 'http://unsplash.it/400?image=89',
+    image: 'http://unsplash.it/400?image=',
     title: 'Blades of Grass Painting',
     seller: 'buddy',
     price:'$' + 7.99
   },{
-    image: 'http://unsplash.it/400?image=99',
+    image: 'http://unsplash.it/400?image=',
     title: 'Ancient Wooden Wheel',
     seller: 'javascript16',
     price:'$' + 8.89
   },{
-    image: 'http://unsplash.it/400?image=26',
+    image: 'http://unsplash.it/400?image=',
     title: 'Manly Tool Set',
     seller: 'justaddwater25',
     price:'$' + 12.09
   },{
-    image: 'http://unsplash.it/400?image=47',
+    image: 'http://unsplash.it/400?image=',
     title: 'Navy Pier',
     seller: 'greenThunder',
     price:'$' + 15.79
   },{
-    image: 'http://unsplash.it/400?image=34',
+    image: 'http://unsplash.it/400?image=',
     title: 'Vintage Oil Drum',
     seller: 'tiy16',
     price:'$' + 19.99
   }
 ]
-items.forEach(function(item) {
+items.forEach(function(item, i) {
+    item.title += i
+    item.image += i
+    item.seller += i
   createResultCard(item)
 })
 console.log(items)
